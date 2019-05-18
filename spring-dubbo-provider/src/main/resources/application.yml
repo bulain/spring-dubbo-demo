@@ -9,6 +9,5 @@ dubbo:
    scan:
       basePackages: com.bulain.dubbo.service
    registry:
-      id: my-registry
-      address: N/A
-      
+      id: consul-registry
+      address: consul://127.0.0.1:8500

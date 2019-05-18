@@ -13,7 +13,7 @@ import com.bulain.dubbo.DubboConsumerApplication;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DubboConsumerApplication.class)
 public class DemoServiceDemo {
-	@Reference(version = "1.0.0", application = "${dubbo.application.id}", url = "dubbo://localhost:12345")
+	@Reference
 	private DemoService demoService;
 	
 	@Test

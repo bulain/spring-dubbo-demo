@@ -13,13 +13,14 @@ import com.bulain.dubbo.DubboConsumerApplication;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DubboConsumerApplication.class)
 public class DemoServiceDemo {
+
 	@Reference
 	private DemoService demoService;
-	
+
 	@Test
 	public void testSayHello() {
 		String ret = demoService.sayHello("Bulain");
 		assertEquals("Hello Bulain, response form provider.", ret);
 	}
-	
+
 }

@@ -1,13 +1,19 @@
 dubbo:
    application:
-      id: dubbo-demo-provider
-      name: dubbo-demo-provider
+      id: spring-dubbo-provider
+      name: spring-dubbo-provider
    protocol:
       id: dubbo
       name: dubbo
-      port: 12345
+      port: 20881
    scan:
-      basePackages: com.bulain.dubbo.service
+      base-packages: com.bulain.dubbo
    registry:
       id: consul-registry
       address: consul://127.0.0.1:8500
+   metadata-report:
+      address: consul://127.0.0.1:8500
+#    config-center:
+#       address: consul://127.0.0.1:8500
+#    monitor:
+#       address: dubbo://127.0.0.1:20882

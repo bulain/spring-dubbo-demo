@@ -11,7 +11,7 @@ import com.bulain.dubbo.service.DemoService;
 @RestController
 public class DemoCtrl {
 
-	@Reference
+	@Reference(lazy = true)
 	private DemoService demoService;
 
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)

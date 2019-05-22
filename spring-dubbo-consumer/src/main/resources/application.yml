@@ -5,7 +5,7 @@ dubbo:
       id: spring-dubbo-consumer
       name: spring-dubbo-consumer
    registry:
-      id: consul-registry
-      address: consul://127.0.0.1:8500
-   metadata-report:
-      address: consul://127.0.0.1:8500
+      address: zookeeper://127.0.0.1:2181
+      simplified: true
+#   metadata-report:
+#      address: consul://127.0.0.1:8500
